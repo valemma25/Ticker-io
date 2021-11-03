@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TICKER-IO</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="Designer eBay Logo-2_preview_rev_1.png">
+            </div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Concerts and Events</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>TICKER-IO</h1>
+            <p>Make your concert tickets purchasing iteractive and faster with our virtual assistant "Emma"</p>
+        </div>
+        <div class="button">
+            <a href="#" class="btn">LEARN MORE ABOUT EMMA</a>
+            <a href="#" class="btn">WATCH VIDEO</a>
+
+            </a>
+        </div>
+    </header>
+</body>
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "24e38f54-4add-44b7-b4bc-34f7c0efca5d", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "c0a935aa-083d-4746-9555-9e146332c6b6", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+      document.head.appendChild(t);
+    });
+  </script>
+</html>
